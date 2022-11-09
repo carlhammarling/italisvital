@@ -71,6 +71,10 @@ nav {
     justify-content: center;
 }
 
+.column {
+    flex-direction: column;
+}
+
 input {
     padding: .4rem;
     border-radius: 1rem;
@@ -136,11 +140,13 @@ main {
 }
 .artContainer {
     max-width: 1200px;
-    flex-direction: column;
+    
     /* bra för att sidan inte ska åka ihop för mkt*/
     flex-wrap: wrap;
     padding:0px 30px;
 }
+
+
 
 section {
     margin-bottom: 30px;
