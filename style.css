@@ -99,6 +99,10 @@ nav div ul li:not(:first-child) {
     margin-left: 1rem;
 }
 
+nav div ul li:last-child {
+    margin-right: 1rem;
+}
+
 main {
     padding-bottom: 60px;
 }
