@@ -316,11 +316,11 @@ footer li:hover{
         overflow: auto;
     }
 
-    nav div ul li {
+    /* nav div ul li {
         padding:1rem 0rem;   
         border: 0px solid #101f17;
         border-radius: 2rem;
-    }
+    } */
 
     footer > * {
         flex-direction: column;
