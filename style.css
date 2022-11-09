@@ -36,7 +36,9 @@ a {
     color: #101f17;
 }
 
-
+/* .border {
+    border: 1px solid red;
+} */
 
 header, nav {
     margin:auto;
@@ -118,6 +120,7 @@ main {
 #ital h1 {
     font-size: 80px;
     padding-top: 120px;
+    /* font-family: 'Pacifico', cursive; */
 }
 
 #ital input {
@@ -133,6 +136,7 @@ main {
 }
 .artContainer {
     max-width: 1200px;
+    flex-direction: column;
     /* bra för att sidan inte ska åka ihop för mkt*/
     flex-wrap: wrap;
     padding:0px 30px;
@@ -147,9 +151,50 @@ section ul {
     padding: 1rem;
 }
 
-/* section:last-of-type {
-    padding-bottom: 60px;
-} */
+/* RECEPT  */
+
+.receptSnaps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+
+.snap {
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: .3rem;
+    flex-direction: column;
+    display: flex;
+    transition: 300ms;
+    /* filter: grayscale(.5); */
+}
+
+
+
+.snap:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px;
+    scale: 1.01;
+    /* filter: grayscale(0); */
+}
+
+.snapTop {
+    height: 70%;
+    background-size: 100%;
+    background-position: center;
+    border-radius: .3rem;
+}
+
+.snapBottom {
+    padding-top: 1rem;
+    height: 30%;
+    overflow: hidden;
+}
+
 
 .left {
     width: 50%;
@@ -197,6 +242,10 @@ section ul {
 ol li {
     padding-bottom: 1rem;
 }
+
+
+/* FOOTER */
+
 
 
 footer {
@@ -254,4 +303,38 @@ footer li:hover{
 .col h4 {
     margin-bottom: .5rem;
     opacity: .7;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+    nav div > *{
+        overflow: auto;
+    }
+
+    nav div ul li {
+        padding:1rem 0rem;   
+        border: 0px solid #101f17;
+        border-radius: 2rem;
+    }
+
+    footer > * {
+        flex-direction: column;
+    }
+
+    #ital input {
+        width: 200px;
+    }
+
+    #ital h1{
+        font-size: 50px;
+    }
+
+    .footBottom {
+        align-items: center;
+    }
 }

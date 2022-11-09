@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -58,79 +62,111 @@
 </nav>
 <main>
     <div id="ital">
-        <h1>ITAL IS VITAL.</h1>
+        <h1>Ital is Vital.</h1>
         <form id="serchFood">
             <input type="text" placeholder="Vad är du sugen på king?">
             <!-- <button>Sök</button> -->
         </form>
     </div>
     <div class="wrapper">
-        <article class="artContainer flex">
-            <section class="left">
-                <div class="image">
-                    <div class="imageSpace">
-                        <img width="100%" src="./resources/ital stew.webp" alt="">
-                    </div>
-                </div>                
-            </section>
-            <section class="right block"> 
-                <section class="recIntro">
-                    <h1>Ital Stew</h1>
-                    <p>Ital stew is a vegetarian dish aligned with the Rastafarian movement, focusing on unprocessed foods and simple, delicate flavors. </p>
+        <article class="artContainer topbar">
+                <section>
+                    <h1>Recept</h1>              
                 </section>
-                <section class="ingredients">
-                    <h2>Ingredienser</h2>
-                    <ul>
-                        <li>1 onion, chopped</li>
-                        <li>4 cloves garlic, minced</li>
-                        <li>1/2 teaspoon ground allspice</li>
-                        <li>1/2 teaspoon dried thyme</li>
-                        <li>3 green onions, bottoms removed</li>
-                        <li>2 bay leaves</li>
-                        <li>2 cups coconut milk</li>
-                        <li>2 cups water</li>
-                        <li>2 cups pumpkin or squash, cut into bite-sized chunks</li>
-                        <li>2 cups taro, cut into bite-sized chunks (about 1 pound)</li>
-                        <li>1 cup okra, cut into 1/2-inch pieces (about 10 okras)</li>
-                        <li>1/2 yellow plantain, cut into bite-sized pieces</li>
-                        <li>3 carrots, cut into bite-sized chunks</li>
-                        <li>2 cups collard greens, sliced (about 4 leaves)</li>
-                        <li>Juice of 1/2 lime (1 tablespoon)</li>
-                        <li>Sea salt to taste, about 1 teaspoon</li>
-                        <li>Pepper to taste, about 1 teaspoon</li>
-                        <li>1 small handful cilantro, chopped</li>
-                        <li>1 tablespoon olive oil</li>                   
-                    </ul>
+<!--Här börjar recptet-->
+                <section class="receptSnaps">
+                    <a class="snap border" href="">                       
+                        <div style="background-image: url(./resources/cheffdon.jpg)" class="snapTop border">
+                        </div>
+                        <div class="snapBottom border">
+                            <div class="cookTime">
+                                <p>50min</p>
+                            </div>
+                            <div class="foodTitle">
+                                <h3>Jamaicansk Ital-Plate</h3>
+                            </div>
+                            <div class="stars">
+                                <p>***</p>
+                            </div>                           
+                         </div>                        
+                    </a>
+                    <a href="./recept-1.html" class="snap">                   
+                        <div style="background-image: url(./resources/ital\ stew.webp)" class="snapTop border">
+                        </div>
+                        <div class="snapBottom border">
+                            <div class="cookTime">
+                                <p>30min</p>
+                            </div>
+                            <div class="foodTitle">
+                                <h3>Jamaicansk Ital-Stew</h3>
+                            </div>
+                            <div class="stars">
+                                <p>***</p>
+                            </div> 
+                        </div>
+                    </a>
+                    <a href="" class="snap border">
+                        <div style="background-image: url(./resources/mat/mat3.jpeg)" class="snapTop border">
+                        </div>
+                        <div class="snapBottom border">
+                            <div class="cookTime">
+                                <p>40min</p>
+                            </div>
+                            <div class="foodTitle">
+                                <h3>Acke and Saltfish</h3>
+                            </div>
+                            <div class="stars">
+                                <p>***</p>
+                            </div> 
+                         </div>
+                    </a>
+                    <a  href="" class="snap border">
+                        <div style="background-image: url(./resources/italfood.jpeg)" class="snapTop border">
+                        </div>
+                        <div class="snapBottom border">
+                            <div class="cookTime">
+                                <p>30min</p>
+                            </div>
+                            <div class="foodTitle">
+                                <h3>Veggie Chunks</h3>
+                            </div>
+                            <div class="stars">
+                                <p>***</p>
+                            </div> 
+                         </div>
+                    </a>
+                    <a  href="" class="snap border">
+                        <div style="background-image: url(./resources/mat/mat1.jpeg)" class="snapTop border">
+                        </div>
+                        <div class="snapBottom border">
+                            <div class="cookTime">
+                                <p>30min</p>
+                            </div>
+                            <div class="foodTitle">
+                                <h3>Rasta Soup</h3>
+                            </div>
+                            <div class="stars">
+                                <p>***</p>
+                            </div> 
+                         </div>
+                    </a>
+                    <a  href="" class="snap border">
+                        <div style="background-image: url(./resources/mat/mat2.jpeg)" class="snapTop border">
+                        </div>
+                        <div class="snapBottom border">
+                            <div class="cookTime">
+                                <p>30min</p>
+                            </div>
+                            <div class="foodTitle">
+                                <h3>Nyamings</h3>
+                            </div>
+                            <div class="stars">
+                                <p>***</p>
+                            </div> 
+                         </div>
+                    </a>                  
                 </section>
-            </section>
         </article>
-    </div>    
-    <div class="wrapper">
-        <article class="artContainer">
-            <section class="center directions">
-                <h2>Directions</h2>
-                <ol>
-                    <li>    In a stockpot, warm the olive oil over medium heat, then add the onion. 
-                        Sauté until translucent and softened, about 4 minutes. Add the garlic, allspice
-                         and thyme and sauté until aromatic, about 1 minute.
-                    </li>
-                    <li>
-                        Add the green onions, bay leaves, coconut milk and water. Bring to a simmer, then
-                         add the pumpkin and taro and cook for 5 minutes. Reduce heat if it turns into a boil
-                         . Add the potatoes and cook for another 3 minutes. Stir in the okra, plantain and carrots and cook for another 5 minutes. Finally, remove the green onions (and any bay leaves and thyme sprigs), then add the collard greens; simmer until darkened and bright green, about 4 more minutes. At this point, all of the vegetables should be easily pierced with a fork.
-
-                    </li>
-                    <li>
-                        Remove from heat and add the lime juice. Add salt and pepper to taste; stir in the cilantro and serve.
-
-                    </li>
-                </ol>
-    
-    
-    
-    
-            </article>
-            </section>
     </div>  
 </main>
 <footer>
@@ -208,3 +244,5 @@
     <script src=""></script>
 </body>
 </html>
+
+
