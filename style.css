@@ -352,7 +352,7 @@ footer li:hover{
     }
 }
 
-@media (max-width: 500xpx) {
+@media (max-width: 500px) {
 
     body {
         font-size: 80%;
