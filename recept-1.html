@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -58,7 +62,7 @@
 </nav>
 <main>
     <div id="ital">
-        <h1>ITAL IS VITAL.</h1>
+        <h1>Ital is Vital.</h1>
         <form id="serchFood">
             <input type="text" placeholder="Vad är du sugen på king?">
             <!-- <button>Sök</button> -->
@@ -80,26 +84,33 @@
                 </section>
                 <section class="ingredients">
                     <h2>Ingredienser</h2>
+                    <form id="form">
+                        <label for="portion4">Portioner:</label>
+                        <div class="portionBtn border">
+                                <input id="portion4" type="text" value="4">
+                                <button class="border">Go!</button>                       
+                            </div>
+                    </form>
                     <ul>
-                        <li>1 onion, chopped</li>
-                        <li>4 cloves garlic, minced</li>
-                        <li>1/2 teaspoon ground allspice</li>
-                        <li>1/2 teaspoon dried thyme</li>
-                        <li>3 green onions, bottoms removed</li>
-                        <li>2 bay leaves</li>
-                        <li>2 cups coconut milk</li>
-                        <li>2 cups water</li>
-                        <li>2 cups pumpkin or squash, cut into bite-sized chunks</li>
-                        <li>2 cups taro, cut into bite-sized chunks (about 1 pound)</li>
-                        <li>1 cup okra, cut into 1/2-inch pieces (about 10 okras)</li>
-                        <li>1/2 yellow plantain, cut into bite-sized pieces</li>
-                        <li>3 carrots, cut into bite-sized chunks</li>
-                        <li>2 cups collard greens, sliced (about 4 leaves)</li>
-                        <li>Juice of 1/2 lime (1 tablespoon)</li>
-                        <li>Sea salt to taste, about 1 teaspoon</li>
-                        <li>Pepper to taste, about 1 teaspoon</li>
-                        <li>1 small handful cilantro, chopped</li>
-                        <li>1 tablespoon olive oil</li>                   
+                        <li><span id="matSpan1">1</span> onion, chopped</li>
+                        <li><span id="matSpan2">4</span>  cloves garlic, minced</li>
+                        <li><span id="matSpan3">0.5</span> teaspoon ground allspice</li>
+                        <li><span id="matSpan4">0.5</span> teaspoon dried thyme</li>
+                        <li><span id="matSpan5">3</span> green onions, bottoms removed</li>
+                        <li><span id="matSpan6">2</span> bay leaves</li>
+                        <li><span id="matSpan7">2</span> cups coconut milk</li>
+                        <li><span id="matSpan8">2</span> cups water</li>
+                        <li><span id="matSpan9">2</span> cups pumpkin or squash, cut into bite-sized chunks</li>
+                        <li><span id="matSpan10">2</span> cups taro, cut into bite-sized chunks (about 1 pound)</li>
+                        <li><span id="matSpan11">1</span> cup okra, cut into 1/2-inch pieces (about 10 okras)</li>
+                        <li><span id="matSpan12">0.5</span> yellow plantain, cut into bite-sized pieces</li>
+                        <li><span id="matSpan13">3</span> carrots, cut into bite-sized chunks</li>
+                        <li><span id="matSpan14">2</span> cups collard greens, sliced (about 4 leaves)</li>
+                        <li>Juice of <span id="matSpan15">0.5</span> lime (1 tablespoon)</li>
+                        <li>Sea salt to taste, about <span id="matSpan16">1</span> teaspoon</li>
+                        <li>Pepper to taste, about <span id="matSpan17">1</span> teaspoon</li>
+                        <li><span id="matSpan18">1</span> small handful cilantro, chopped</li>
+                        <li><span id="matSpan19">1</span>  tablespoon olive oil</li>                                                                      
                     </ul>
                 </section>
             </section>
@@ -205,6 +216,6 @@
          </div>
 
 </footer>
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 </html>

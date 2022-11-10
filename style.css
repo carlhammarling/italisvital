@@ -78,6 +78,28 @@ input {
     border: 0;
 }
 
+.portionBtn {
+    border-radius: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.portionBtn button{
+    padding:0.5rem 1rem;   
+    border: 1.5px solid #101f17;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+
+.portionBtn input{
+    padding: .4em;
+    border-radius: 2rem;
+    border: 0;
+}
+
 
 
 nav div > * {
@@ -112,7 +134,7 @@ main {
 #ital {
     background-image: url(./resources/01-rasta-ital-cooking_4x3.webp);
     background-size: 1500px;
-    background-size: 94em;
+    background-size: 95em;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -125,7 +147,7 @@ main {
 
 #ital h1 {
     font-size: 4em;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', italic;
 }
 
 #ital input {
@@ -200,6 +222,10 @@ section ul {
     padding-top: 1em;
     height: 30%;
     overflow: hidden;
+}
+
+.cookTime {
+    opacity: .6;
 }
 
 
@@ -333,6 +359,7 @@ footer li:hover{
 
     .artContainer {
         padding: 0 .5em;
+        text-align: left;
     }
     .snap {
         flex-basis: 220px;
