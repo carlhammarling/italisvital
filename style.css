@@ -55,6 +55,7 @@ nav {
 .topbar {
     margin:auto;
     padding: .625em 1.875em;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,12 +83,13 @@ input {
 nav div > * {
     display: flex;
     list-style: none;
+    font-size: 16px;
 }
 
 nav div ul li {
-    padding:0.5em 1em;   
+    padding:0.5rem 1rem;   
     border: 1.5px solid #101f17;
-    border-radius: 2em;
+    border-radius: 2rem;
 }
 
 
@@ -96,11 +98,11 @@ nav div ul li:hover {
     transition: 100ms;
 }
 nav div ul li:not(:first-child) {
-    margin-left: 1em;
+    margin-left: 1rem;
 }
 
 nav div ul li:last-child {
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 main {
@@ -127,8 +129,8 @@ main {
 }
 
 #ital input {
-    padding: 1em;
-    border-radius: 2em;
+    padding: 1rem;
+    border-radius: 2rem;
     width: 24em;
 }
 
@@ -342,7 +344,7 @@ footer li:hover{
     }
 
     #ital input {
-        width: 200px;
+        /* width: 200px; */
     }
 
     .footBottom {
@@ -350,7 +352,7 @@ footer li:hover{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500xpx) {
 
     body {
         font-size: 80%;
