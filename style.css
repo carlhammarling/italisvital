@@ -22,13 +22,12 @@ body {
 }
 
 h1 {
-    font-size: 55px;
-    padding-bottom: 10px;
+    font-size: 3em;  
 }
 
 h2 {
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: 1.8em;
+    padding-bottom: .63em;
 }
 
 a {
@@ -41,10 +40,7 @@ a {
 } */
 
 header {         
-    /* background-color: #4c956c;  */
-    background: linear-gradient(146deg, rgba(76,149,108,1) 0%, rgba(76,149,108,1) 65%, rgba(83,180,125,1) 100%);
-    /* background: linear-gradient(141deg, rgba(76,149,108,1) 60%, rgba(83,180,125,1) 100%); */
-    
+    background: linear-gradient(146deg, rgba(76,149,108,1) 0%, rgba(76,149,108,1) 65%, rgba(83,180,125,1) 100%);    
 }
 
 nav {
@@ -58,7 +54,7 @@ nav {
 
 .topbar {
     margin:auto;
-    padding:10px 30px;
+    padding: .625em 1.875em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,9 +85,9 @@ nav div > * {
 }
 
 nav div ul li {
-    padding:0.5rem 1rem;   
+    padding:0.5em 1em;   
     border: 1.5px solid #101f17;
-    border-radius: 2rem;
+    border-radius: 2em;
 }
 
 
@@ -100,37 +96,40 @@ nav div ul li:hover {
     transition: 100ms;
 }
 nav div ul li:not(:first-child) {
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 nav div ul li:last-child {
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 main {
-    padding-bottom: 60px;
+    padding-bottom: 3.75em;
 }
 
 #ital {
     background-image: url(./resources/01-rasta-ital-cooking_4x3.webp);
     background-size: 1500px;
+    background-size: 94em;
     background-position: center;
-    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 21.875em;
     color: white;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75em;
 }
 
 #ital h1 {
-    font-size: 80px;
-    padding-top: 120px;
-    /* font-family: 'Pacifico', cursive; */
+    font-size: 4em;
+    font-family: 'Pacifico', cursive;
 }
 
 #ital input {
-    padding: 1rem;
-    border-radius: 1.5rem;
-    width: 350px;
+    padding: 1em;
+    border-radius: 2em;
+    width: 24em;
 }
 
 .wrapper {
@@ -144,13 +143,13 @@ main {
     /* bra för att sidan inte ska åka ihop för mkt*/
     flex-wrap: wrap;
     padding:0px 30px;
+    padding:0px 1.875em;
 }
 
 
 
 section {
-    margin-bottom: 30px;
-    /* border: 1px solid red; */
+    margin-bottom: 1.875em;
 }
 
 section ul {
@@ -167,13 +166,13 @@ section ul {
 }
 
 .snap {
-    flex-basis: 300px;
+    flex-basis: 18.75em;
     flex-shrink: 1;
     flex-grow: 1;
-    height: 300px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: .3rem;
+    height: 18.75em;
+    margin: .625em;
+    padding: .625em;
+    border-radius: .3em;
     flex-direction: column;
     display: flex;
     transition: 300ms;
@@ -192,11 +191,11 @@ section ul {
     height: 70%;
     background-size: 100%;
     background-position: center;
-    border-radius: .3rem;
+    border-radius: .3em;
 }
 
 .snapBottom {
-    padding-top: 1rem;
+    padding-top: 1em;
     height: 30%;
     overflow: hidden;
 }
@@ -204,7 +203,10 @@ section ul {
 
 .left {
     width: 50%;
-    min-width: 500px;
+    /* min-width: 500px; */
+    flex-basis: 500px;
+    flex-shrink: 1;
+    flex-grow: 1;
     padding-right: 15px;
 }
 
@@ -264,19 +266,20 @@ footer > * {
     display: flex;
     place-content: center;
     justify-content: space-evenly;
-    padding: 1rem;
+    padding: 1em;
 }
 
 .col {
     max-width: 500px;
-     padding: 25px;
+    max-width: 31.25em;
+     padding: 1.56em;
  }
 
 .imgIcon {
     filter: invert();
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+    width: 1em;
+    height: 1em;
+    margin-right: .3em;
     opacity: .7;
 }
 
@@ -287,7 +290,7 @@ footer > * {
 
 footer li, footer p{
     list-style: none;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 200;
     line-height: 140%;
     color: white;
@@ -307,7 +310,7 @@ footer li:hover{
 }
 
 .col h4 {
-    margin-bottom: .5rem;
+    margin-bottom: .5em;
     opacity: .7;
 }
 
@@ -318,10 +321,21 @@ footer li:hover{
 /* RESPONSIVE */
 
 @media (max-width: 750px) {
+
+    body {
+        font-size: 90%;
+    }
     nav > * {
         overflow: auto;
     }
 
+    .artContainer {
+        padding: 0 .5em;
+    }
+    .snap {
+        flex-basis: 220px;
+        height: 240px;
+    }
 
     footer > * {
         flex-direction: column;
@@ -331,11 +345,32 @@ footer li:hover{
         width: 200px;
     }
 
-    #ital h1{
-        font-size: 60px;
-    }
-
     .footBottom {
         align-items: center;
     }
+}
+
+@media (max-width: 500px) {
+
+    body {
+        font-size: 80%;
+    }
+    
+    .snap {
+        flex-basis: 140px;
+        max-width: 200px;
+        height: 180px;
+        /* margin: 5px;
+        padding: 5px;
+         */
+    }
+
+    .snapTop {
+        height: 60%;
+    }
+
+    .snapBottom {
+        padding-top: .5rem;
+        height: 40%;
+    } 
 }
